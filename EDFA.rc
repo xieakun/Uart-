@@ -1,0 +1,574 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EDFA.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\SOM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 718, 467
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FMI智能识别系统读写设备调试软件"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,17,7,683,79
+    COMBOBOX        IDC_COMBO_COMNO,61,109,58,121,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BANDRATE,61,133,58,74,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "打开",IDC_BUTTON_OPENCOM,41,158,50,15
+    PUSHBUTTON      "关闭",IDC_BUTTON_CLOSECOM,153,158,50,15
+    LTEXT           "串口号：",IDC_STATIC,24,111,32,16
+    LTEXT           "波特率：",IDC_STATIC,24,135,33,16
+    LTEXT           "状态：",IDC_STATIC,152,99,51,16
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,157,116,32,32
+    GROUPBOX        "Channe1",IDC_STATIC,13,275,214,167
+    LTEXT           "ETDLC1总线:",IDC_STATIC,23,325,51,16
+    LTEXT           "ETMPO总线:",IDC_STATIC,23,351,51,16
+    LTEXT           "RFID信息:",IDC_STATIC,23,377,51,16
+    EDITTEXT        IDC_EDIT1,75,323,86,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT34,75,348,86,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT35,75,373,86,17,ES_AUTOHSCROLL
+    LTEXT           "存储器信息",IDC_STATIC,91,297,49,12
+    LTEXT           "状态",IDC_STATIC,195,297,49,12
+    PUSHBUTTON      "写入1",IDC_BUTTON1,95,407,42,17
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,195,321,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,195,346,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,195,371,16,16
+    GROUPBOX        "Channe2",IDC_STATIC,245,88,215,167
+    LTEXT           "ETDLC1总线:",IDC_STATIC,255,138,51,16
+    LTEXT           "ETMPO总线:",IDC_STATIC,255,164,51,16
+    LTEXT           "RFID信息:",IDC_STATIC,255,190,51,16
+    EDITTEXT        IDC_EDIT36,307,136,86,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT37,307,161,86,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT38,307,186,86,17,ES_AUTOHSCROLL
+    LTEXT           "存储器信息",IDC_STATIC,323,110,49,12
+    LTEXT           "状态",IDC_STATIC,427,110,49,12
+    PUSHBUTTON      "写入2",IDC_BUTTON2,327,216,42,17
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,427,134,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,427,159,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,427,184,16,16
+    GROUPBOX        "Channe3",IDC_STATIC,244,276,216,167
+    LTEXT           "ETDLC1总线:",IDC_STATIC,254,326,51,16
+    LTEXT           "ETMPO总线:",IDC_STATIC,254,352,51,16
+    LTEXT           "RFID信息:",IDC_STATIC,254,378,51,16
+    EDITTEXT        IDC_EDIT39,306,324,86,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT40,306,349,86,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT41,306,374,86,17,ES_AUTOHSCROLL
+    LTEXT           "存储器信息",IDC_STATIC,322,298,49,12
+    LTEXT           "状态",IDC_STATIC,426,298,49,12
+    PUSHBUTTON      "写入3",IDC_BUTTON3,326,405,42,17
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,426,322,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,426,347,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,426,372,16,16
+    GROUPBOX        "Channe4",IDC_STATIC,480,89,213,167
+    LTEXT           "ETDLC1总线:",IDC_STATIC,490,139,51,16
+    LTEXT           "ETMPO总线:",IDC_STATIC,490,165,51,16
+    LTEXT           "RFID信息:",IDC_STATIC,490,191,51,16
+    EDITTEXT        IDC_EDIT42,542,137,86,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT43,542,162,86,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT44,542,187,86,17,ES_AUTOHSCROLL
+    LTEXT           "存储器信息",IDC_STATIC,558,111,49,12
+    LTEXT           "写入信息",IDC_STATIC,486,219,49,12
+    LTEXT           "状态",IDC_STATIC,662,111,49,12
+    PUSHBUTTON      "写入4",IDC_BUTTON7,562,218,42,17
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,662,135,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,662,160,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,662,185,16,16
+    GROUPBOX        "Channe5",IDC_STATIC,478,277,215,167
+    LTEXT           "ETDLC1总线:",IDC_STATIC,488,327,51,16
+    LTEXT           "ETMPO总线:",IDC_STATIC,488,353,51,16
+    LTEXT           "RFID信息:",IDC_STATIC,488,379,51,16
+    EDITTEXT        IDC_EDIT45,540,325,86,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT46,540,350,86,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT47,540,375,86,17,ES_AUTOHSCROLL
+    LTEXT           "存储器信息",IDC_STATIC,556,299,49,12
+    LTEXT           "写入信息",IDC_STATIC,484,407,49,12
+    LTEXT           "状态",IDC_STATIC,660,299,49,12
+    PUSHBUTTON      "写入5",IDC_BUTTON8,562,407,42,17
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,660,323,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,660,348,16,16
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,660,373,16,16
+    GROUPBOX        "串口操作",IDC_STATIC,9,88,217,92
+    GROUPBOX        "整体操作",IDC_STATIC,10,194,217,67
+    PUSHBUTTON      "自动写入",IDC_BUTTON_OPENCOM3,40,221,50,15
+    PUSHBUTTON      "停止",IDC_BUTTON_OPENCOM4,152,222,50,15
+END
+
+IDD_EDFA_DIALOG DIALOGEX 0, 0, 701, 497
+STYLE WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_READCONTENT,80,441,481,49,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,232,249,25,25
+    PUSHBUTTON      "Clear all parameters",IDC_BUTTON16,586,463,85,20
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,7,3,1249,79
+    COMBOBOX        IDC_COMBO_COMNO,75,104,58,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_COMBO_BANDRATE,75,128,58,74,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL
+    PUSHBUTTON      "ON",IDC_BUTTON_OPENCOM,55,161,50,12
+    PUSHBUTTON      "OFF",IDC_BUTTON_CLOSECOM,170,161,50,14
+    LTEXT           "Serial port:",IDC_STATIC_POTNUM,36,106,33,16
+    LTEXT           "Baud rate:",IDC_STATIC_BOUDRATE,36,130,35,16
+    GROUPBOX        "Serial port settings",IDC_STATIC_CKSZ,22,85,216,103,0,0,
+                    HIDC_STATIC_CKSZ
+    LTEXT           "Returned messages：",IDC_STATIC_RB,33,462,41,16
+    GROUPBOX        "Overall operation",IDC_STATIC_ZTCZ,21,199,217,67
+    PUSHBUTTON      "Write All",IDC_BUTTON_OPENCOM4,44,217,100,15
+    LTEXT           "status：",IDC_STATIC_PORTSTATE,172,98,51,16
+    CONTROL         146,IDC_STC_COMM,"Static",SS_BITMAP,177,115,32,32
+    GROUPBOX        "Channe1",IDC_STATIC_CH1,24,275,214,167
+    LTEXT           "ETDLC1Bus:",IDC_STATIC_ZX11,38,325,51,16
+    LTEXT           "ETMPO1Bus:",IDC_STATIC_ZX12,38,351,51,16
+    LTEXT           "RFID Info:",IDC_STATIC_RF1,38,377,51,16
+    EDITTEXT        IDC_EDIT_CH1,90,322,86,37,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    EDITTEXT        IDC_EDIT_RFID1,90,368,86,30,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Memory information",IDC_STATIC_MSG1,89,296,87,12
+    PUSHBUTTON      "Write1",IDC_BTN_CHN_W1,74,421,42,17
+    CONTROL         142,IDC_STC_DLC1,"Static",SS_BITMAP,210,321,16,16
+    CONTROL         142,IDC_STC_MPO1,"Static",SS_BITMAP,210,346,16,16
+    GROUPBOX        "Channe2",IDC_STATIC_CH2,255,86,215,167
+    LTEXT           "ETDLC2Bus:",IDC_STATIC_ZX21,265,136,51,16
+    LTEXT           "ETMPO2Bus:",IDC_STATIC_ZX22,265,162,51,16
+    LTEXT           "RFID Info:",IDC_STATIC_RF2,265,188,51,16
+    EDITTEXT        IDC_EDIT_CH2,317,134,86,37,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    EDITTEXT        IDC_EDIT_RFID2,317,179,86,31,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Memory information",IDC_STATIC_MSG2,321,107,87,12
+    PUSHBUTTON      "Write2",IDC_BTN_CHN_W2,308,232,42,17
+    CONTROL         142,IDC_STC_DLC2,"Static",SS_BITMAP,437,132,16,16
+    CONTROL         142,IDC_STC_MPO2,"Static",SS_BITMAP,437,157,16,16
+    GROUPBOX        "Channe3",IDC_STATIC_CH3,253,274,216,167
+    LTEXT           "ETDLC3Bus:",IDC_STATIC_ZX31,263,324,51,16
+    LTEXT           "ETMPO3Bus:",IDC_STATIC_ZX32,263,350,51,16
+    LTEXT           "RFID Info:",IDC_STATIC_RF3,263,376,51,16
+    EDITTEXT        IDC_EDIT_CH3,315,322,86,37,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    EDITTEXT        IDC_EDIT_RFID3,315,368,86,30,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Memory information",IDC_STATIC_MSG3,320,295,78,12
+    PUSHBUTTON      "Write3",IDC_BTN_CHN_W3,308,421,42,17
+    CONTROL         142,IDC_STC_DLC3,"Static",SS_BITMAP,435,320,16,16
+    CONTROL         142,IDC_STC_MPO3,"Static",SS_BITMAP,435,345,16,16
+    GROUPBOX        "Channe4",IDC_STATIC_CH4,476,86,213,167
+    LTEXT           "ETDLC4Bus:",IDC_STATIC_ZX41,489,136,51,16
+    LTEXT           "ETMPO4Bus:",IDC_STATIC_ZX42,489,162,51,16
+    LTEXT           "RFID Info:",IDC_STATIC_RF4,489,188,51,16
+    EDITTEXT        IDC_EDIT_CH4,541,134,86,37,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    EDITTEXT        IDC_EDIT_RFID4,541,179,86,31,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Memory information",IDC_STATIC_MSG4,546,107,91,12
+    PUSHBUTTON      "Write4",IDC_BTN_CHN_W4,533,232,42,17
+    CONTROL         142,IDC_STC_DLC4,"Static",SS_BITMAP,661,132,16,16
+    CONTROL         142,IDC_STC_MPO4,"Static",SS_BITMAP,661,157,16,16
+    GROUPBOX        "Channe5",IDC_STATIC_CH5,474,274,215,167
+    LTEXT           "ETDLC5Bus:",IDC_STATIC_ZX51,486,324,51,16
+    LTEXT           "ETMPO5Bus:",IDC_STATIC_ZX52,486,350,51,16
+    LTEXT           "RFID Info:",IDC_STATIC_RF5,486,376,51,16
+    EDITTEXT        IDC_EDIT_CH5,538,322,86,37,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    EDITTEXT        IDC_EDIT_RFID5,538,368,86,30,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Memory information",IDC_STATIC_MSG5,543,293,84,12
+    PUSHBUTTON      "Write5",IDC_BTN_CHN_W5,533,421,42,17
+    CONTROL         142,IDC_STC_DLC5,"Static",SS_BITMAP,658,320,16,16
+    CONTROL         142,IDC_STC_MPO5,"Static",SS_BITMAP,658,345,16,16
+    PUSHBUTTON      "Read All",IDC_BUTTON_ONEKEYRECEIVE,45,243,101,15
+    CONTROL         "Auto monitoring",IDC_Check_Auto,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,155,230,76,11
+    CONTROL         "",IDC_RIO_DLC1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,187,326,9,8
+    CONTROL         " ",IDC_RIO_MPO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,187,351,9,8
+    CONTROL         "",IDC_CHK_RF1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,
+                    376,9,8
+    CONTROL         "",IDC_CHK_RF2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,
+                    188,9,8
+    CONTROL         "",IDC_CHK_RF3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,
+                    376,9,8
+    CONTROL         "",IDC_CHK_RF4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,635,
+                    187,9,8
+    CONTROL         "",IDC_CHK_RF5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,635,
+                    376,9,8
+    CONTROL         "",IDC_RIO_DLC3,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,411,326,9,8
+    CONTROL         "",IDC_RIO_MPO3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    412,351,8,8
+    CONTROL         "",IDC_RIO_DLC22,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,411,137,9,8
+    CONTROL         "",IDC_RIO_MPO22,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,412,163,8,8
+    CONTROL         "",IDC_RIO_DLC4,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,635,136,9,8
+    CONTROL         "",IDC_RIO_MPO4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    636,161,8,8
+    CONTROL         "",IDC_RIO_DLC5,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,635,326,9,8
+    CONTROL         "",IDC_RIO_MPO5,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    636,351,8,8
+    PUSHBUTTON      "Read1",IDC_BTN_CHN_R1,137,421,42,17
+    PUSHBUTTON      "Read2",IDC_BTN_CHN_R2,366,232,42,17
+    PUSHBUTTON      "Read3",IDC_BTN_CHN_R3,366,421,42,17
+    PUSHBUTTON      "Read4",IDC_BTN_CHN_R4,590,232,42,17
+    PUSHBUTTON      "Read5",IDC_BTN_CHN_R5,590,421,42,17
+    LTEXT           "Block:",IDC_STATIC_Block1,38,404,39,12
+    CONTROL         "0",IDC_RIO_Block1_0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,89,404,20,10
+    CONTROL         "1",IDC_RIO_Block1_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,123,404,20,10
+    CONTROL         "2",IDC_RIO_Block1_2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,158,404,20,10
+    CONTROL         "3",IDC_RIO_Block1_3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,189,404,20,10
+    CONTROL         "0",IDC_RIO_Block2_0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,316,217,20,10
+    CONTROL         "1",IDC_RIO_Block2_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,351,217,20,10
+    CONTROL         "2",IDC_RIO_Block2_2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,386,217,20,10
+    CONTROL         "3",IDC_RIO_Block2_3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,413,217,20,10
+    CONTROL         "0",IDC_RIO_Block3_0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,314,404,20,10
+    CONTROL         "1",IDC_RIO_Block3_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,347,404,20,10
+    CONTROL         "2",IDC_RIO_Block3_2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,380,404,20,10
+    CONTROL         "3",IDC_RIO_Block3_3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,413,404,20,10
+    CONTROL         "0",IDC_RIO_Block4_0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,540,216,20,10
+    CONTROL         "1",IDC_RIO_Block4_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,575,216,20,10
+    CONTROL         "2",IDC_RIO_Block4_2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,610,216,20,10
+    CONTROL         "3",IDC_RIO_Block4_3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,643,216,20,10
+    CONTROL         "0",IDC_RIO_Block5_0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,536,404,20,10
+    CONTROL         "1",IDC_RIO_Block5_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,572,404,20,10
+    CONTROL         "2",IDC_RIO_Block5_2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,608,404,20,10
+    CONTROL         "3",IDC_RIO_Block5_3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,643,404,20,10
+    LTEXT           "Block:",IDC_STATIC_Block2,266,216,39,12
+    LTEXT           "Block:",IDC_STATIC_Block3,264,404,39,12
+    LTEXT           "Block:",IDC_STATIC_Block4,489,216,39,12
+    LTEXT           "Block:",IDC_STATIC_Block5,486,404,39,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FMI智能识别系统 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FMI\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FMI.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "FMI智能识别系统\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 711
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 460
+    END
+
+    IDD_EDFA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 689
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 490
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_EDFA_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0031, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0032, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0033, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0034, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0035, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0036, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0037, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0038, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x304d, 0x0039, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0032, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0033, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0034, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0035, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0036, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0037, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0038, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x314d, 0x0039, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0030, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0031, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0032, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0033, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0034, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0035, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0036, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0037, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0038, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x324d, 0x0039, 
+    IDC_COMBO_COMNO, 0x403, 6, 0
+0x4f43, 0x334d, 0x0030, 
+    0
+END
+
+IDD_ABOUTBOX DLGINIT
+BEGIN
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO_COMNO, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO_BANDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BANDRATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\bitmap6.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\bitmap8.bmp"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "res\\bitmap9.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\bitmap33.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\bitmap44.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap55.bmp"
+IDB_BITMAP10            BITMAP  DISCARDABLE     "res\\bitmap10.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FMI智能识别系统读写设备软件(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EDFA.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
